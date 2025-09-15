@@ -1,0 +1,75 @@
+<main>
+
+    <section>
+      <h2>Product Overview</h2>
+      <p>{{ overview }}</p>
+    </section>
+  
+    <section>
+      <h2>Specifications</h2>
+      <ul>
+        <li><strong>Switch:</strong> {{ specs.switch }}</li>
+        <li><strong>Layout:</strong> {{ specs.layout }}</li>
+        <li><strong>Backlight:</strong> {{ specs.backlight }}</li>
+        <li><strong>Connectivity:</strong> {{ specs.connectivity }}</li>
+        <li><strong>Dimensions:</strong> {{ specs.dimensions }}</li>
+        <li><strong>Weight:</strong> {{ specs.weight }}</li>
+        <li><strong>Cable:</strong> {{ specs.cable }}</li>
+        <li><strong>Features:</strong> {{ specs.features }}</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>In the Box</h2>
+      <ul>
+        <li *ngFor="let item of boxItems">{{ item }}</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Key Features</h2>
+      <ul>
+        <li *ngFor="let f of features">{{ f }}</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Setup Instructions</h2>
+      <ul>
+        <li *ngFor="let s of setup">{{ s }}</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Using the Keyboard</h2>
+      <ul>
+        <li *ngFor="let u of usage">{{ u }}</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Troubleshooting</h2>
+      <ul>
+        <li *ngFor="let t of troubleshooting">{{ t }}</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Maintenance and Care</h2>
+      <ul>
+        <li *ngFor="let m of maintenance">{{ m }}</li>
+      </ul>
+    </section>
+  
+    <section>
+      <h2>Warranty and Support</h2>
+      <p><strong>Warranty:</strong> {{ warranty.period }}</p>
+      <p><strong>Email:</strong> {{ warranty.support }}</p>
+      <p><strong>Hotline:</strong> {{ warranty.hotline }}</p>
+      <p><strong>Website:</strong> 
+        <a href="http://{{ warranty.website }}" target="_blank">{{ warranty.website }}</a>
+      </p>
+    </section>
+  
+  </main>
+  

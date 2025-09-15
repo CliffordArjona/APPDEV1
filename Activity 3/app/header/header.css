@@ -1,0 +1,15 @@
+header {
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+  

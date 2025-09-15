@@ -1,0 +1,15 @@
+footer {
+  background: linear-gradient(135deg, #16a085, #2980b9); /* inverted header */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 5rem;
+  font-size: 0.95rem;
+  border-top: 4px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 6px 0;
+  opacity: 0.9;
+}

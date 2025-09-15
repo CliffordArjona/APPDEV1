@@ -1,0 +1,62 @@
+<main class="p-6">
+
+    <!-- Profile -->
+    <section>
+      <h2>{{ profile.name }}</h2>
+      <h3>{{ profile.title }}</h3>
+      <p>{{ profile.about }}</p>
+      <p><strong>Skills:</strong> {{ profile.skills[0] }}, {{ profile.skills[1] }}, {{ profile.skills[2] }}, {{ profile.skills[3] }}</p>
+    </section>
+  
+    <!-- Educational Background -->
+    <section>
+      <h2>Educational Background</h2>
+      <ul>
+        <li>{{ education.college }}</li>
+        <li>{{ education.shs }}</li>
+      </ul>
+    </section>
+  
+    <!-- Awards -->
+    <section>
+      <h2>Educational Awards & Experiences</h2>
+      <ul>
+        <li>{{ awards.award1 }}</li>
+        <li>{{ awards.award2 }}</li>
+      </ul>
+    </section>
+  
+    <!-- Work Experience -->
+    <section>
+      <h2>Internship & Work Experience</h2>
+      <ul>
+        <li>{{ experiences.exp1 }}</li>
+        <li>{{ experiences.exp2 }}</li>
+      </ul>
+    </section>
+  
+    <!-- Courses -->
+    <section>
+      <h2>Currently Enrolled Courses & Teachers</h2>
+      <table border="1" cellpadding="8">
+        <tr>
+          <th>Course</th>
+          <th>Teacher</th>
+        </tr>
+        <tr>
+          <td>{{ courses.c1.name }}</td>
+          <td>{{ courses.c1.teacher }}</td>
+        </tr>
+        <tr>
+          <td>{{ courses.c2.name }}</td>
+          <td>{{ courses.c2.teacher }}</td>
+        </tr>
+        <tr>
+          <td>{{ courses.c3.name }}</td>
+          <td>{{ courses.c3.teacher }}</td>
+        </tr>
+      </table>
+    </section>
+  
+  </main>
+  

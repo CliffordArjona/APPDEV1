@@ -1,0 +1,21 @@
+header {
+  background: linear-gradient(135deg, #2980b9, #16a085); /* blue-green blend */
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  font-weight: 300;
+}
