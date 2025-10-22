@@ -1,0 +1,33 @@
+git clone {url of repository}
+cd APPDEV1 --go to the folder
+git status
+git add . / git add *
+git commit -m "ADDED ACTIVITY"
+git push
+
+
+
+
+go to C:\documents\angular 
+npm install @angular/cli
+npx ng version -> 
+npx ng new my-angular-app --no-standalone
+cd my-angular-app
+npx ng serve
+
+FOR CREATING COMPONENTS:
+npx ng generate component header,body,footer,heroes
+
+FOR CREATING INTERFACE:
+npx ng generate interface hero
+
+
+
+
+
+
+
+
+
+
+

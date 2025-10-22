@@ -1,0 +1,150 @@
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f6f8fb;
+    color: #222;
+    height: 100vh;
+  }
+
+  .app-shell {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 220px 1fr; 
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer";
+    height: 100vh;
+  }
+
+  .app-header {
+    grid-area: header;
+    background: #1e3a8a;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .app-sidebar {
+    grid-area: sidebar;
+    background: #243c5a;
+    color: white;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+
+  .app-main {
+    grid-area: main;
+    padding: 1.5rem;
+    overflow-y: auto;
+    background: #f9fafb;
+  }
+
+  .app-footer {
+    grid-area: footer;
+    background: #1e3a8a;
+    color: white;
+    padding: 0.4rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .nav {
+    list-style: none;
+  }
+
+  .nav li {
+    margin: 0.3rem 0;
+  }
+
+  .nav a {
+    display: block;
+    padding: 0.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .nav a.active,
+  .nav a:hover {
+    background: #3b82f6;
+    color: white;
+  }
+
+  .card {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+  }
+
+  .pokemon-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .pokemon-list li {
+    background: #e5e7eb;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border: none;
+  }
+
+  .btn-ghost {
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+
+  .btn-ghost:hover {
+    background: #f3f4f6;
+  }
+
+  @media (max-width: 768px) {
+    .app-shell {
+      grid-template-rows: auto auto 1fr auto;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "header"
+        "sidebar"
+        "main"
+        "footer";
+    }
+
+    .app-sidebar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  }
+
+  .leader-img {
+    max-width: 180px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }

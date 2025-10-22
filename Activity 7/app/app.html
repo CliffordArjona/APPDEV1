@@ -1,0 +1,17 @@
+<div class="app-shell">
+  <header class="app-header">
+    <app-header></app-header>
+  </header>
+
+  <aside class="app-sidebar">
+    <app-sidebar [gyms]="gyms"></app-sidebar>
+  </aside>
+
+  <main class="app-main">
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer class="app-footer">
+    <app-footer></app-footer>
+  </footer>
+</div>

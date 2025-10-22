@@ -1,0 +1,16 @@
+<div class="logo">Gym Leaders</div>
+<nav>
+  <ul class="nav">
+    <li *ngFor="let g of gyms">
+      <a [routerLink]="['/gym', g.id]" routerLinkActive="active">
+        {{ g.name }}
+      </a>
+    </li>
+    <li style="margin-top:.5rem">
+      <a [routerLink]="['/']">← Back to Landing</a>
+    </li>
+    <li style="margin-top:.5rem">
+      <a [routerLink]="['/trainer']">👤 Trainer Registration</a>
+    </li>
+  </ul>
+</nav>

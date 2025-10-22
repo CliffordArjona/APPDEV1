@@ -1,0 +1,27 @@
+<div *ngIf="leader" class="card detail-card">
+  <div class="card-header">
+    <div class="header-info">
+      <h2>{{ leader.name }}</h2>
+      <div class="muted">{{ leader.location }} • {{ leader.type }}-type</div>
+    </div>
+    <div class="header-action">
+      <button class="btn back-btn" (click)="goBack()">← Back</button>
+    </div>
+  </div>
+
+  <div class="image-wrapper">
+    <div class="image-box">
+      <img [src]="leader.image" [alt]="leader.name" class="leader-img">
+    </div>
+  </div>
+
+  <div class="card-body">
+    <h3>Badge</h3>
+    <p>{{ leader.badge }}</p>
+
+    <h3>Pokémon Team</h3>
+    <ul class="pokemon-list">
+      <li *ngFor="let p of leader.pokemon">{{ p }}</li>
+    </ul>
+  </div>
+</div>
